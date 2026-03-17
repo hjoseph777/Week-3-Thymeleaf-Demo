@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>About - Tekken Reborn</title>
+    <div th:insert="fragments/base :: assetsHead"></div>
+</head>
+<body>
+
+    <nav th:replace="fragments/navbar :: navbar"></nav>
+
+    <div class="app-container text-center">
+        <div class="players-card">
+
+            <!-- Requirement: <h1> with "Tekken Reborn" -->
+            <h1>Tekken Reborn</h1>
+
+            <!-- Requirement: at least 2–3 sentences of meaningful content -->
+            <p class="text-muted">
+                An epic fighting game where legendary warriors clash in the ultimate tournament.
+                Choose your champion, master their unique combos, and rise to the top of the
+                leaderboards to prove your skill!
+            </p>
+            <p class="text-muted">
+                Experience breathtaking graphics, a robust multiplayer matchmaking system, and
+                an all-new storyline that dives deep into the intricate lore of each character.
+            </p>
+
+            <!-- Extra creative content -->
+            <h3>Key Features</h3>
+            <ul class="text-start">
+                <li>Brand-new <strong>Heat System</strong> mechanics that reward aggressive play</li>
+                <li>Over <strong>30 unique</strong> fully playable fighters at launch</li>
+                <li>Stunning, interactive arena environments across 15 stages</li>
+                <li>Cross-platform ranked matchmaking and seasonal tournaments</li>
+            </ul>
+
+            <br>
+            <a th:href="@{/}" class="btn btn-primary">&#8592; Back to Home</a>
+
+        </div>
+    </div>
+
+    <div th:insert="fragments/base :: assetsScripts"></div>
+</body>
+</html>
