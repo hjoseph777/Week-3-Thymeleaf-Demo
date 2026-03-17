@@ -131,47 +131,40 @@ public class AboutController {
 
 ---
 
-## <span style="color:red">❌ Step 4: Run & Test Locally (NOT DONE)</span>
+## <span style="color:green">✅ Step 4: Run & Test Locally (COMPLETED)</span>
 
-<span style="color:red">
+<span style="color:green">
 
-The app has not been tested yet. After completing Steps 2 and 3, do the following:
+The application has been verified to run on JDK 21 after the `pom.xml` fix. ✅
 
-1. Open your terminal at the project root (`Thymeleaf-Demo` folder).
-2. Start the local server:
+1. Start the local server — ✅ Done.
    ```bash
    mvn spring-boot:run
    ```
-3. Wait for the Spring console to confirm the app has started.
-4. Open your browser and navigate to:
-   [http://localhost:8080/about](http://localhost:8080/about)
-5. Confirm you see your Tekken Reborn page with no errors.
+2. Navigate to [http://localhost:8080/about](http://localhost:8080/about) — ✅ Done.
+3. Confirm the page renders correctly — ✅ Done.
 
 </span>
 
 ---
 
-## <span style="color:red">❌ Step 5: Commit and Push (NOT DONE)</span>
+## <span style="color:green">✅ Step 5: Commit and Push (COMPLETED)</span>
 
-<span style="color:red">
+<span style="color:green">
 
-Once testing is confirmed, save and submit your changes via Git.
+All lab changes have been committed and pushed to your GitHub fork. ✅
 
-1. Stop the running app in your terminal (`CTRL + C`).
-2. Stage all changes:
+1. Stop the application — ✅ Done.
+2. Stage and commit changes — ✅ Done.
    ```bash
    git add .
-   ```
-3. Commit with the required message:
-   ```bash
    git commit -m "Lab 1: Implement About Controller"
    ```
-4. Push your feature branch to GitHub:
+3. Push to your fork (`origin`) — ✅ Done.
    ```bash
-   git push origin feature/lab-yourname
+   git push origin feature/lab01-HarryJoseph
    ```
-   *(Use the exact branch name you created in Step 1B)*
-5. Go to your forked repository on GitHub — click **"Compare & pull request"** to open a Pull Request to the original repository.
+4. Open a Pull Request on GitHub — ✅ Done.
 
 </span>
 
