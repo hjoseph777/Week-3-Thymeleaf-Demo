@@ -1,5 +1,77 @@
 # Thymeleaf Cheat Sheet
 
+## How to Run This Project
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/hjoseph777/Week-3-Thymeleaf-Demo.git
+cd Week-3-Thymeleaf-Demo
+```
+
+### 2. Create Your Feature Branch
+
+Always work on a feature branch, never directly on `main`:
+
+```bash
+git checkout -b feature/lab-yourname
+```
+
+Example:
+
+```bash
+git checkout -b feature/lab01-HarryJoseph
+```
+
+### 3. Start the App
+
+```bash
+mvn spring-boot:run
+```
+
+Wait for the console to confirm startup:
+
+```
+Started ThymeleafDemoApplication in 3.x seconds
+```
+
+Then open your browser to:
+
+- **Home page:** http://localhost:8080/
+- **About page:** http://localhost:8080/about
+- **Players page:** http://localhost:8080/players
+
+### 4. Push to Your Own Fork (Not the Original Repo)
+
+The original class repository (`upstream`) is read-only for students — you cannot push branches there directly. Always push to your own forked copy:
+
+```bash
+git add .
+git commit -m "Lab 1: Implement About Controller"
+git push origin feature/lab01-HarryJoseph
+```
+
+Then open a **Pull Request** from your fork back to the original repo.
+
+### 5. If You Hit a Build Error
+
+If you see `error: release version 1.8 not supported`, your JDK is too new. The `pom.xml` in this repo already fixes it by explicitly setting:
+
+```xml
+<maven.compiler.source>17</maven.compiler.source>
+<maven.compiler.target>17</maven.compiler.target>
+<maven.compiler.release>17</maven.compiler.release>
+```
+
+Check your Java version with:
+
+```bash
+java -version
+echo $JAVA_HOME
+```
+
+---
+
 ## Quick Start
 
 Thymeleaf uses the `th:` namespace to add dynamic functionality to HTML. Always include the namespace in your template:
